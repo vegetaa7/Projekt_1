@@ -1,4 +1,4 @@
-#include <klasa_kolor.h>
+#include "klasa_kolor.h"
 #include <string>
 Kolor::Kolor(string nazw)
 {

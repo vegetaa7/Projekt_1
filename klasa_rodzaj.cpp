@@ -1,4 +1,4 @@
-#include <klasa_rodzaj.h>
+#include "klasa_rodzaj.h"
 #include <string>
 Rodzaj::Rodzaj(string nazw)
 {

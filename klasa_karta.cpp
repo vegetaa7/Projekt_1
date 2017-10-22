@@ -1,6 +1,8 @@
 #include <sstream>
 #include <string>
-#include <klasa_karta.h>
+#include "klasa_karta.h"
+#include "klasa_rodzaj.h"
+#include "klasa_kolor.h"
 Karta::Karta(string nazw)
  {
     stringstream ss(nazw);
