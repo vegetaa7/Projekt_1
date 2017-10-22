@@ -1,20 +1,21 @@
-#ifndef KLASA_KOLOR_H
-#define KLASA_KOLOR_H
+	#ifndef KLASA_KOLOR_H
+	#define KLASA_KOLOR_H
+	#include <string>
+	#include "klasa_rodzaj.h"
+	#include "klasa_karta.h"
+	using namespace std;
 
-#include "klasa_rodzaj.h"
-#include "klasa_karta.h"
+	class Kolor {
+	private:
+	string nazwa;
+	int starszenstwo;
+	public:
+    
+    	Kolor(string);
+	int getstarszenstwo();
+	};
 
-class Kolor {
-private:
-string nazwa;
-int starszenstwo;
-public:
-    Kolor();
-    Kolor(string);
-int getstarszenstwo();
-};
-
-// Kolor k(pik)
+	// Kolor k(pik)
 
 
-#endif
+	#endif

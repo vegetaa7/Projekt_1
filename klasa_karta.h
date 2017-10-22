@@ -1,21 +1,24 @@
-#ifndef KLASA_KARTA_H
-#define KLASA_KARTA_H
+	#ifndef KLASA_KARTA_H
+	#define KLASA_KARTA_H
 
-#include "klasa_rodzaj.h"
-#include "klasa_kolor.h"
+	#include "klasa_rodzaj.h"
+	#include "klasa_kolor.h"
+	using namespace std;
 
-class Karta
- {
-private:
-    string nazwa;
-    int starszenstwo;
+	class Karta
+ 	{
+	private:
+    	string nazwa;
+    	int starszenstwo;
 
-public:
-    // argument 'napis' jest w formie rodzaj_kolor, np. '2_trefl'
-    Karta();
-    Karta(string);
+	public:
+    	// argument 'napis' jest w formie rodzaj_kolor, np. '2_trefl'
+    	Karta();
+    	Karta(string);
+	string getnazwa();
+	int getstarszenstwo();
 
-};
+	};
 
 
 #endif

@@ -1,20 +1,20 @@
-#ifndef KLASA_RODZAJ_H
-#define KLASA_RODZAJ_H
+	#ifndef KLASA_RODZAJ_H
+	#define KLASA_RODZAJ_H
+	#include <string>
+	#include "klasa_karta.h"
+	#include "klasa_kolor.h"
+	using namespace std;
+	class Rodzaj{
 
-#include "klasa_karta.h"
-#include "klasa_kolor.h"
+	private:
 
-class Rodzaj{
+	string nazwa;
+	int starszenstwo;
 
-private:
+	public:
 
-string nazwa;
-int starszenstwo;
+	Rodzaj(string);
+	int getstarszenstwo();
+	};
 
-public:
-
-Rodzaj();
-int getstarszenstwo();
-};
-
-#endif
+	#endif
