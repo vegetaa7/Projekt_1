@@ -66,7 +66,8 @@
 
 	Zestawy::Zestawy(vector<Karta> wklej){
 
-	Wszystkie(wklej);
+	Wszystkie (wklej);
+	
 
 
 	}
