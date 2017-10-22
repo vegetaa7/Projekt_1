@@ -1,10 +1,11 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <klasa_zestawy.h>
-#include <klasa_rodzaj.h>
-#include <klasa_kolor.h>
-#include <klasa_karta.h>
+#include "klasa_zestawy.h"
+
+#include "klasa_karta.h"
+#include "klasa_rodzaj.h"
+#include "klasa_kolor.h"
 
 using namespace std;
 
