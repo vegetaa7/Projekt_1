@@ -3,6 +3,8 @@
 
 	#include "klasa_rodzaj.h"
 	#include "klasa_kolor.h"
+	#include<iostream>
+	#include<string>
 	using namespace std;
 
 	class Karta
@@ -17,7 +19,7 @@
     	Karta(string);
 	string getnazwa();
 	int getstarszenstwo();
-
+	bool operator<(Karta);
 	};
 
 

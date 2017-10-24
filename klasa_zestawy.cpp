@@ -6,6 +6,7 @@
 	#include "klasa_rodzaj.h"
 	#include "klasa_kolor.h"
 	#include "klasa_karta.h"
+	#include <assert.h>
 	using namespace std;
 
 	/*
@@ -66,8 +67,8 @@
 
 	Zestawy::Zestawy(vector<Karta> wklej){
 
-	Wszystkie (wklej);
-	
+	Wszystkie=wklej;
+
 
 
 	}
@@ -78,11 +79,11 @@
 
 	vector<Karta>::iterator itr;
 
-	itr=Wszystkie.cbegin();
+	itr=Wszystkie.begin();
 
-	while(itr!=Wszystkie.cend()){
+	while(itr!=Wszystkie.end()){
 
-	cout<< itr->nazwa<<" ";
+	cout<< itr->getnazwa()<<" ";
 	itr++;
 	}
 
@@ -90,12 +91,12 @@
 
 	Karta Zestawy::Zwracanie_najstarszej(){
 
-    	assert !Wszystkie.empty();
+    	assert (Wszystkie.empty()!=0);
 
-    	vector<Karta>:: iterator najwiekszy=Wszystkie.cbegin();//!!!!!!!!!!!
+    	vector<Karta>::iterator najwiekszy=Wszystkie.begin();//!!!!!!!!!!!
 
-    	for(vector<Karta>::iterator itr=Wszystkie.cbegin();(itr+1)!=Wszystkie.cend();itr++){
-        if( (*najwiekszy)<(*(itr+1))
+    	for(vector<Karta>::iterator itr=Wszystkie.begin();(itr+1)!=Wszystkie.end();itr++){
+        if( ((*(itr+1)).getstarszenstwo())>((*najwiekszy).getstarszenstwo()))
             najwiekszy=(itr+1);
     	}
     	return *najwiekszy;
@@ -103,12 +104,12 @@
 
 	Karta Zestawy::Zwracanie_najmlodszej(){
 
-	assert !Wszystkie.empty();
+	assert (Wszystkie.empty()!=0);
 
-   	 vector<Karta>:: iterator najmniejszy=Wszystkie.cbegin();//!!!!!!!!!!!
+   	 vector<Karta>::iterator najmniejszy=Wszystkie.begin();//!!!!!!!!!!!
 
-    	for(vector<Karta>::iterator itr=Wszystkie.cbegin();(itr+1)!=Wszystkie.cend();itr++){
-        if( (*najmniejszy)>(*(itr+1))
+    	for(vector<Karta>::iterator itr=Wszystkie.begin();(itr+1)!=Wszystkie.end();itr++){
+        if( ((*najmniejszy).getstarszenstwo())>((*(itr+1)).getstarszenstwo()))
             najmniejszy=(itr+1);
     	}
     	return *najmniejszy;

@@ -7,12 +7,12 @@
 
 	class Kolor {
 	private:
-	string nazwa;
-	int starszenstwo;
+        string nazwa;
+        int starszenstwo;
 	public:
-    
+
     	Kolor(string);
-	int getstarszenstwo();
+    int getstarszenstwo();
 	};
 
 	// Kolor k(pik)

@@ -3,6 +3,8 @@
 	#include "klasa_karta.h"
 	#include "klasa_rodzaj.h"
 	#include "klasa_kolor.h"
+	#include<iostream>
+
 	using namespace std;
 	Karta::Karta(string nazw)
  	{
@@ -29,5 +31,11 @@
 	return starszenstwo;
 
 }
+bool Karta::operator<(Karta k1){
 
+	if(getstarszenstwo()<k1.getstarszenstwo())
+	return true;
+	else return false;
+
+}
 

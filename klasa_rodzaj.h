@@ -4,6 +4,7 @@
 	#include "klasa_karta.h"
 	#include "klasa_kolor.h"
 	using namespace std;
+	class Karta;
 	class Rodzaj{
 
 	private:
